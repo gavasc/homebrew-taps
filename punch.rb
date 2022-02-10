@@ -6,6 +6,7 @@ class Punch < Formula
 
   def install
     share.install 'share/database.db'
+    prefix.install 'env.rb'
     lib.install 'lib/database.rb'
     bin.install 'bin/punch'
   end
