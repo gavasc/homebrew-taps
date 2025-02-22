@@ -5,20 +5,20 @@
 class Tica < Formula
   desc ""
   homepage "https://github.com/gavasc/homebrew-taps"
-  version "0.1.1"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gavasc/tica/releases/download/v0.1.1/tica_Darwin_x86_64.tar.gz"
-      sha256 "11da8417a0688f566cebb90a5f916cc1e213a99d31f891c12d38f8fe5414e735"
+      url "https://github.com/gavasc/tica/releases/download/v0.2.0/tica_Darwin_x86_64.tar.gz"
+      sha256 "6a347236ae4e0f8300f959ea994a569f91a2e4215da091b7ffe992cab388635b"
 
       def install
         bin.install "tica"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gavasc/tica/releases/download/v0.1.1/tica_Darwin_arm64.tar.gz"
-      sha256 "eb5f276c29004807e2ad3152d23a039b54e62ce2a5072ad0a2df37f8d15a0045"
+      url "https://github.com/gavasc/tica/releases/download/v0.2.0/tica_Darwin_arm64.tar.gz"
+      sha256 "3ecbb8652a317eba87e41b55a2c270795311980b479418881b02c9cf20016384"
 
       def install
         bin.install "tica"
@@ -29,8 +29,8 @@ class Tica < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gavasc/tica/releases/download/v0.1.1/tica_Linux_x86_64.tar.gz"
-        sha256 "4743923758293cc31c060b91d3f96b4bdfedd8e35deb276c5f35b72c6f77ff4d"
+        url "https://github.com/gavasc/tica/releases/download/v0.2.0/tica_Linux_x86_64.tar.gz"
+        sha256 "c4bcc29997ccb6fbb1364b6ac1e56c6e4c60d660dd480e5c49ddb344edfd4e57"
 
         def install
           bin.install "tica"
@@ -39,8 +39,8 @@ class Tica < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gavasc/tica/releases/download/v0.1.1/tica_Linux_arm64.tar.gz"
-        sha256 "d52f57c02a7f5b5f329c2f4308ff2965a0159c462ffd701dceec10151748cb1a"
+        url "https://github.com/gavasc/tica/releases/download/v0.2.0/tica_Linux_arm64.tar.gz"
+        sha256 "7a2269ea6c24751476f1397cbf7df48dba78a14ff2bc9907c70e14343c607b66"
 
         def install
           bin.install "tica"
